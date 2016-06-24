@@ -1,0 +1,21 @@
+html,body {height:100%;}
+
+article {
+    min-height:100%;
+    border-left:2px solid red;
+}
+
+article div {
+    overflow:auto;
+    padding-bottom:30px;
+}
+
+footer {   
+    position: relative;
+    clear: both;
+    height: 50px;
+    line-height: 30px;
+    margin-bottom: 10px; 
+    background-color: black;
+    
+}

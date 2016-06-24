@@ -1,6 +1,17 @@
 
-<div ui-view="nav"></div>
-<div ui-view="sidebar"></div>
+<div style="height:100%; width:100%">
+
+    <div ui-view="sidebar"></div>
 
 
 
+    <section class="right">
+        <section class="top">
+            <div ui-view="nav"></div>
+        </section>
+
+        <section class="main">
+            <div ui-view="body"></div>
+        </section>
+    </section>
+</div>
