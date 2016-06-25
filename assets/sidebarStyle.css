@@ -2,7 +2,6 @@ body, html {
     height: 100%;
 }
 
-
 .main .row {
     padding: 0px;
     margin: 0px;
@@ -89,7 +88,6 @@ nav.sidebar, .main {
             width: 100%;
         }
 
-
         nav.sidebar:hover {
             margin-left: 0px;
         }
@@ -97,6 +95,7 @@ nav.sidebar, .main {
     .forAnimate {
         opacity: 0;
     }
+
 }
 
 @media (min-width: 1330px) {
@@ -120,6 +119,7 @@ nav.sidebar .navbar-nav .open .dropdown-menu > li > a:hover, nav.sidebar .navbar
     background-color: transparent;
 }
 
+/* class for blue color*/
 li:hover {
     background-color: rgb(28,153,218);
 }
@@ -135,8 +135,4 @@ nav:hover .forAnimate {
 
 section {
     padding-left: 15px;
-}
-
-a.link.active {
-    color: blue;
 }

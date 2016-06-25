@@ -2,10 +2,10 @@
 
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a ui-sref="home">Home<span style="font-size:16px;" class="link pull-right hidden-xs showopacity glyphicon glyphicon-info-sign"></span></a></li>
-                <li><a ui-sref="course">Courses<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-folder-close"></span></a></li>
-                <li><a ui-sref="blog">blog<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-wrench"></span></a></li>
-                <li><a ui-sref="aboutUs" >aboutUs<span style="font-size:16px;" class="pull-right hidden-xs showopacity fa fa-recycle"></span></a></li>
+                <li><a ng-class="{active: $state.includes('home')}" ui-sref="home" style="color:white">Home<span style="font-size:16px;" class="link pull-right hidden-xs showopacity glyphicon glyphicon-info-sign"></span></a></li>
+                <li><a ui-sref="course" style="color:white">Courses<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-folder-close"></span></a></li>
+                <li><a ui-sref="blog" style="color:white">blog<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-wrench"></span></a></li>
+                <li><a ui-sref="aboutUs" style="color:white">aboutUs<span style="font-size:16px;" class="pull-right hidden-xs showopacity fa fa-recycle"></span></a></li>
             </ul>
         </div>
 </nav>
