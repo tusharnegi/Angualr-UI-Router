@@ -1,21 +1,19 @@
-html,body {height:100%;}
+/* Styles go here */
+.nav { border: 1px solid black; position: absolute; height: 15%; width: auto; left: 0; right: 0; top: 0; bottom: auto;}
+.middle { position: absolute; height: auto; width: auto; left: 0; right: 0; top: 100px; bottom: 0;}
+.sidebar { border: 1px solid blue; position: absolute; height: auto; min-width: 200px; left: 0; right: auto; margin-top: 15%;bottom: 0;}
+.body { border: 1px solid blue; position: absolute; height: auto; width: auto; left: 200px; right: 0; top: 0; bottom: 0;}
+.footer { }
 
-article {
-    min-height:100%;
-    border-left:2px solid red;
+@media(min-width: 768px) {
+    .sidebar:hover + .body{  left: 200px; }
+   .body { border: 1px solid blue; position: absolute; height: auto; width: auto; left: 40px; right: 0; top: 0; bottom: 0; }
+   .sidebar { border: 1px solid blue; position: absolute; height: auto; min-width: 40px; left: 0; right: auto; top: 0; bottom: 0; }  
 }
 
-article div {
-    overflow:auto;
-    padding-bottom:30px;
-}
-
-footer {   
-    position: relative;
-    clear: both;
-    height: 50px;
-    line-height: 30px;
-    margin-bottom: 10px; 
-    background-color: black;
-    
+@media(min-width: 1330px) {
+    .nav { border: 1px solid black; position: absolute; height: 14%; width: auto; left: 0; right: 0; top: 0; bottom: auto;}
+    .body { border: 1px solid blue; position: absolute; height: auto; width: auto; left: 200px; right: 0; top: 0; bottom: 0;}
+    .middle {position: absolute; height: auto; width: auto; left: 0; right: 0; top: 14%; bottom: 0; }
+    .sidebar {border: 1px solid blue; position: absolute; height: auto; min-width: 200px; left: 0; right: auto; margin-top: 0; bottom: 0;}
 }
