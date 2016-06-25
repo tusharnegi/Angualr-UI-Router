@@ -1,10 +1,7 @@
 var Routing = angular.module('Routing', ['ui.router']);
 
-
 Routing.config(function ($stateProvider, $urlRouterProvider) {
-
     $urlRouterProvider.otherwise('/');
-
     $stateProvider
         .state('main', {
             url: '/',
@@ -21,12 +18,28 @@ Routing.config(function ($stateProvider, $urlRouterProvider) {
                     templateUrl: 'templates/sidebar.html'
                 },
                 'body@main': {
-                    url: 'body',
-                    templateUrl: 'templates/body.html'
+                    url: 'home',
+                    //  controller:'bodyController',
+                    templateUrl: 'Views/home/homeView.html'
                 },
             },
         })
+    .state('main.course', {
+        url: 'course',
+        templateUrl: 'Views/courses/courseView.html',
+    })
+    .state('blog', {
+        url: 'blog',
+        templateUrl: 'Views/blog/blogView.html',
+        parent: 'main'
+    })
+    .state('aboutUs', {
+        url: 'aboutUs',
 
+        views:{
+            templateUrl: 'Views/aboutUs/aboutUs.html'
+        },
+        parent: 'main'
+    })
 });
-
 // template and assets should be in assets

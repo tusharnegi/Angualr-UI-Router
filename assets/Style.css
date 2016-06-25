@@ -2,17 +2,86 @@
     media querry for screen resolution below 1330px.
     All css for this resolution are mentioned below  */
 
-   .sidebar:hover + .body{  left: 200px; }
-   .middle {position: absolute; height: auto; width: auto; left: 0; right: 0; top: 14%; bottom: 0; }
-   .body { border: 1px solid blue; position: absolute; height: auto; width: auto; left: 40px; right: 0; top: 0; bottom: 0; }
-   .sidebar { border: 1px solid blue; position: absolute; height: auto; min-width: 40px; left: 0; right: auto; top: 0; bottom: 0; }  
+.sidebar:hover + .body {
+    left: 200px;
+}
+
+.middle {
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: 0;
+    right: 0;
+    top: 14%;
+    bottom: 0;
+}
+
+.body {
+    border: 1px solid blue;
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: 40px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.sidebar {
+    border: 1px solid blue;
+    position: absolute;
+    height: auto;
+    min-width: 40px;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: 0;
+}
 
 /*  Written By: Vineet
     media querry for screen resolution above 1330px.
     All css for this resolution are mentioned below  */
 @media(min-width: 1330px) {
-    .nav { border: 1px solid black; position: absolute; height: 14%; width: auto; left: 0; right: 0; top: 0; bottom: auto;}
-    .body { border: 1px solid blue; position: absolute; height: auto; width: auto; left: 200px; right: 0; top: 0; bottom: 0;}
-    .middle {position: absolute; height: auto; width: auto; left: 0; right: 0; top: 14%; bottom: 0; }
-    .sidebar {border: 1px solid blue; position: absolute; height: auto; min-width: 200px; left: 0; right: auto; margin-top: 0; bottom: 0;}
+    .nav {
+        border: 1px solid black;
+        position: absolute;
+        height: 14%;
+        width: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: auto;
+    }
+
+    .body {
+        border: 1px solid blue;
+        position: absolute;
+        height: auto;
+        width: auto;
+        left: 200px;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+    .middle {
+        position: absolute;
+        height: auto;
+        width: auto;
+        left: 0;
+        right: 0;
+        top: 14%;
+        bottom: 0;
+    }
+
+    .sidebar {
+        border: 1px solid blue;
+        position: absolute;
+        height: auto;
+        min-width: 200px;
+        left: 0;
+        right: auto;
+        margin-top: 0;
+        bottom: 0;
+    }
 }
