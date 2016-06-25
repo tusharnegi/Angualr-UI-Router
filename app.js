@@ -1,7 +1,7 @@
 var Routing = angular.module('Routing', ['ui.router']);
 
 Routing.config(function ($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/home');
     $stateProvider
         .state('main', {
             url: '/',
@@ -17,16 +17,17 @@ Routing.config(function ($stateProvider, $urlRouterProvider) {
                     url: 'sidebar',
                     templateUrl: 'templates/sidebar.html'
                 },
-                'body@main': {
-                    url: 'home',
-                    //  controller:'bodyController',
-                    templateUrl: 'Views/home/homeView.html'
-                },
             },
         })
-    .state('main.course', {
+    .state('home', {
+        url: 'home',
+        templateUrl: 'Views/home/homeView.html',
+        parent: 'main'
+    })
+    .state('course', {
         url: 'course',
         templateUrl: 'Views/courses/courseView.html',
+        parent: 'main'
     })
     .state('blog', {
         url: 'blog',
@@ -35,10 +36,7 @@ Routing.config(function ($stateProvider, $urlRouterProvider) {
     })
     .state('aboutUs', {
         url: 'aboutUs',
-
-        views:{
-            templateUrl: 'Views/aboutUs/aboutUs.html'
-        },
+        templateUrl: 'Views/aboutUs/aboutUs.html',
         parent: 'main'
     })
 });
