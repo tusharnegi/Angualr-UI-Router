@@ -22,21 +22,32 @@ Routing.config(function ($stateProvider, $urlRouterProvider) {
     .state('home', {
         url: 'home',
         templateUrl: 'Views/home/homeView.html',
+        controller: 'homeController',
         parent: 'main'
     })
     .state('course', {
         url: 'course',
         templateUrl: 'Views/courses/courseView.html',
+        controller:'courseController',
         parent: 'main'
     })
     .state('blog', {
         url: 'blog',
         templateUrl: 'Views/blog/blogView.html',
+        controller: 'blogController',
         parent: 'main'
     })
     .state('aboutUs', {
         url: 'aboutUs',
-        templateUrl: 'Views/aboutUs/aboutUs.html',
+        templateUrl: 'Views/aboutUs/aboutUsView.html',
+        controller: 'aboutUsController',
+        parent: 'main'
+    })
+     //view for this is not added
+    .state('quiz', {
+        url: 'quiz',
+        templateUrl: 'Views/quiz/quizView.html',
+        controller: 'quizController',
         parent: 'main'
     })
 });

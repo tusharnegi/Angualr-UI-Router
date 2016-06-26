@@ -1,3 +1,7 @@
+is-active{
+      background-color: rgb(28,153,218);
+}
+
 body, html {
     height: 100%;
 }
@@ -23,6 +27,9 @@ nav.sidebar, .main {
 }
 
 @media (min-width: 768px) {
+    .is-active{
+    background-color: rgb(28,153,218);
+}
     .main {
         position: absolute;
         width: calc(100% - 40px);
@@ -99,6 +106,9 @@ nav.sidebar, .main {
 }
 
 @media (min-width: 1330px) {
+    is-active{
+       background-color: rgb(28,153,218);
+}
     .main {
         width: calc(100% - 200px);
         margin-left: 200px;

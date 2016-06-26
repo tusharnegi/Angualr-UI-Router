@@ -6,6 +6,10 @@
     left: 200px;
 }
 
+.is-active{
+    background-color: rgb(28,153,218);
+}
+
 .middle {
     position: absolute;
     height: auto;
@@ -42,6 +46,9 @@
     media querry for screen resolution above 1330px.
     All css for this resolution are mentioned below  */
 @media(min-width: 1330px) {
+  .is-active{
+    background-color: rgb(28,153,218);
+}
     .nav {
         border: 0px solid black;
         position: absolute;
