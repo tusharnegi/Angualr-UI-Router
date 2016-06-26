@@ -5,16 +5,19 @@
     <title>AngularJS UI-Routing </title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Bootstrap Library-->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!--Angular Library-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
-    <script src="assets/stateHelper.js"></script>
 
-
-    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <!--Font Awesome Library-->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 
+    <!--local Library-->
     <link rel="stylesheet" href="assets/sidebarStyle.css">
     <link rel="stylesheet" href="assets/footerStyle.css">
     <link rel="stylesheet" href="/assets/Style.css">
@@ -23,24 +26,23 @@
 </head>
 <body >
 
-
-
     <div ui-view></div>
-
-  
 
     <!----------------------------START: List Of javascript Dependencies--------------------------------------->
     <!-- Appjs-->
     <script src="app.js"></script>
     <!-- Service-->
     <script src="services/home/homeService.js"> </script>
+    <script src="services/aboutUs/aboutUsService.js"> </script>
+    <script src="services/blog/blogService.js"> </script>
+    <script src="services/course/courseService.js"> </script>
+    <script src="services/quiz/quizService.js"> </script>
     <!-- Controller-->
     <script src="Controller/home/homeController.js"></script>
     <script src="Controller/course/courseController.js"></script>
     <script src="Controller/blog/blogController.js"></script>
     <script src="Controller/quiz/quizController.js"></script>
     <script src="Controller/aboutUs/aboutUsController.js"></script>
-
 
     <!----------------------------END: List Of javascript Dependencies----------------------------------------->
 

@@ -1,3 +1,37 @@
 <div> home View </div>
 
-<button type="button" class="btn btn-primary">Next</button>
+{{homeData}}
+
+<form role="form">
+    <div class="row container-fluid">
+        <div class="col-lg-3">
+            <div class="form-group">
+                <label for="inputdefault">Default input</label>
+                <input ng-model="homeData.Default" class="form-control" id="inputdefault" type="text">
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="form-group">
+                <label for="inputlg">input-lg</label>
+                <input ng-model="homeData.large" class="form-control input-lg" id="inputlg" type="text">
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="form-group">
+                <label for="inputsm">input-sm</label>
+                <input ng-model="homeData.small" class="form-control input-sm" id="inputsm" type="text">
+            </div>
+        </div>
+    </div>
+</form>
+
+
+
+
+<button type="button" ui-sref="course" class="btn btn-primary">Next</button>
+
+
+<button ng-click="reload()" data-ui-sref="home" data-ui-sref-opts="{reload: true}">Reset</button>
+
+
+
