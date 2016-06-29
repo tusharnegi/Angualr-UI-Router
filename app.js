@@ -1,4 +1,4 @@
-var Routing = angular.module('Routing', ['ui.router']);
+var Routing = angular.module('Routing', ['ui.router', 'toaster', 'ngAnimate']);
 
 Routing.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
