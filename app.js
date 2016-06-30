@@ -1,5 +1,6 @@
-var Routing = angular.module('Routing', ['ui.router', 'toaster', 'ngAnimate']);
 
+
+var Routing = angular.module('Routing', ['ui.router','ngAnimate','toastr']);
 Routing.config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/home');
     $stateProvider
@@ -50,5 +51,7 @@ Routing.config(function ($stateProvider, $urlRouterProvider) {
         controller: 'quizController',
         parent: 'main'
     })
+
 });
 // template and assets should be in assets
+
